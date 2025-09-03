@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Elegance Beauty Parlour</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #444;
+      line-height: 1.6;
+    }
+    header {
+      background: url('banner.jpg') no-repeat center center/cover;
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      letter-spacing: 2px;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    nav {
+      background-color: #f8f1f1;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .about, .services, .gallery, .booking, .contact {
+      margin-bottom: 60px;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      background-color: #f1f1f1;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+    }
+    form {
+      display: grid;
+      grid-gap: 15px;
+      max-width: 500px;
+    }
+    form input, form textarea, form select, form button {
+      padding: 10px;
+      font-size: 1em;
+    }
+    form button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1em;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .contact p {
+      margin: 5px 0;
+    }
+    footer {
+      text-align: center;
+      background-color: #f8f1f1;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2em; }
+      header p { font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Elegance Beauty Parlour</h1>
+  <p>Your beauty, our passion.</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#booking">Book</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Located in the heart of the city, Elegance Beauty Parlour offers top-tier services in a serene and welcoming environment. Our skilled professionals are dedicated to enhancing your natural beauty using premium products.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Haircut & Styling</li>
+      <li>Hair Coloring & Highlights</li>
+      <li>Facial & Skin Treatments</li>
+      <li>Manicure & Pedicure</li>
+      <li>Spa & Massage Therapy</li>
+    </ul>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <img src="https://via.placeholder.com/300x200?text=Hair+Style+1" alt="Hair Style 1">
+    <img src="https://via.placeholder.com/300x200?text=Facial+Treatment" alt="Facial Treatment">
+    <img src="https://via.placeholder.com/300x200?text=Manicure" alt="Manicure">
+    <img src="https://via.placeholder.com/300x200?text=Massage+Therapy" alt="Massage Therapy">
+  </section>
+
+  <section id="booking" class="booking">
+    <h2>Book an Appointment</h2>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <select name="service" required>
+        <option value="">Select Service</option>
+        <option value="haircut">Haircut & Styling</option>
+        <option value="color">Hair Coloring</option>
+        <option value="facial">Facial</option>
+        <option value="manicure">Manicure</option>
+        <option value="spa">Spa & Massage</option>
+      </select>
+      <textarea name="message" rows="4" placeholder="Your Message (optional)"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> 123 Beauty Lane, Your City</p>
+    <p><strong>Phone:</strong> +1 (234) 567‑8901</p>
+    <p><strong>Email:</strong> contact@elegancebeauty.com</p>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2025 Elegance Beauty Parlour. All Rights Reserved.
+</footer>
+
+</body>
+</html>
